@@ -67,11 +67,11 @@ app.get("/", (req, res) => {
 })
 
 app.get("/creatures", (req,res) => {
-  res.render("index", {creatures:getCreatures()})
+  res.render("foobar", {creatures:getCreatures()})
 })
 
-app.get("/creatures/new", (req,res) => {
-  creature = {name:"", age:"", ability:""}
+app.get("/creatures/ndew", (req,res) => {
+  creature = {}blah blah blah
   res.render("new", {creature:creature})
 })
 
