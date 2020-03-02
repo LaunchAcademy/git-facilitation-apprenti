@@ -66,15 +66,15 @@ app.get("/", (req, res) => {
   res.redirect("/creatures")
 })
 
-// app.get("/creatures", (req,res) => {
-//   res.render("index", {creatures:getCreatures()})
-// })
+app.get("/creatures", (req,res) => {
+  res.render("index", {creatures:getCreatures()})
+})
 
-// app.get("/creatures/new", (req,res) => {
-//   creature = {name:"", age:"", ability:""}
-//   res.render("new", {creature:creature})
-// })
-//
+app.get("/creatures/new", (req,res) => {
+  creature = {name:"", age:"", ability:""}
+  res.render("new", {creature:creature})
+})
+
 // app.post("/creatures", (req,res) => {
 //   let creaturesArray = getCreatures()
 //   const newCreature = {name:req.body.name, age: req.body.age, ability: req.body.ability}
